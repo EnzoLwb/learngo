@@ -8,6 +8,14 @@ func main() {
 	arr2 := [5]int{1, 23, 4, 5, 1}
 	arr3 := [...]int{1, 23, 4, 5, 1}
 	var grid [4][5]int
+	var d = [...]struct { //struct 创建出来的类型
+		name string
+		age  int
+	}{
+		{"xxxx", 14},
+		{"xxxx1", 24}, //换行的话 就需要逗号
+	}
+	fmt.Println(d)
 	fmt.Println("arr1")
 	printArray(arr1)
 	fmt.Println("arr2")
