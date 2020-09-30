@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: golang:latest
+    volumes:
+      - ./:/go/src/learngo/
+    ports:
+      - "18080:8080"
+    command: go run /go/src/learngo/main.go

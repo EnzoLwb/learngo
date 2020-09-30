@@ -1,5 +1,9 @@
 package engine
 
+type saveEngineChan struct {
+	ItemChan chan interface{}
+}
+
 type Request struct {
 	Url        string
 	ParserFunc func([]byte) ParseResult
